@@ -63,12 +63,11 @@ img{
 /* HEADER  */
 /* site-nav */
 .site-header{
-  height: 832px;
   background-color: #F0F5FB;
   background-image: url("../img/bannerimg.png");
   background-repeat: no-repeat;
   background-position: 0 50px;
-  background-size: contain;
+  background-size: 100%;
 }
 .site-nav-container{
   display: flex;
@@ -80,7 +79,9 @@ img{
   display: flex;
   align-items: center;
   margin: 0;
+  margin-right: 30px;
   padding: 0;
+  padding-top: 10px;
   list-style-type: none;
 }
 .nav-item + .nav-item{
@@ -96,6 +97,10 @@ img{
 .site-info{
   display: flex;
   align-items: center;
+  padding-top: 10px;
+}
+.working-hours{
+  white-space: nowrap;
 }
 .working-hours::before{
   display: inline-block;
@@ -113,6 +118,8 @@ img{
   font-size: 18px;
   line-height: 22px;
   color: #000000;
+  vertical-align: middle;
+  white-space: nowrap;
 }
 .phone-number::before{
   display: inline-block;
@@ -126,4 +133,39 @@ img{
   linear-gradient(287.74deg, #F58656 8.52%, #c0c0c0 92.72%);
   background-position: center center;
   background-repeat: no-repeat;
+}
+/* intro  */
+.intro-container{
+  position: relative;
+  top:  105px;
+}
+.intro-container::after{
+  margin-left: auto;
+  display: block;
+  content: "";
+  max-width: 897px;
+  height: 590px;
+  background-image: url("../img/pizza.png");
+  background-size:  contain;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  
+}
+.intro-data{
+  max-width: 621px;
+  margin: 0 auto;
+  color: #000000;
+  text-align: center;
+}
+.intro-title{
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 48px;
+  line-height: 59px;
+}
+.intro-info{
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
 }
