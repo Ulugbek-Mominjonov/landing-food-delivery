@@ -33,6 +33,7 @@ html{
 body{
   padding: 0;
   margin: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
   font-weight: normal;
   font-size: 12px;
   line-height: 17px;
@@ -58,4 +59,71 @@ img{
   padding-right: 70px;
   margin-left: auto;
   margin-right: auto;
+}
+/* HEADER  */
+/* site-nav */
+.site-header{
+  height: 832px;
+  background-color: #F0F5FB;
+  background-image: url("../img/bannerimg.png");
+  background-repeat: no-repeat;
+  background-position: 0 50px;
+  background-size: contain;
+}
+.site-nav-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+.nav-list{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.nav-item + .nav-item{
+  margin-left: 40px;
+}
+.nav-link, .working-hours{
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+.site-info{
+  display: flex;
+  align-items: center;
+}
+.working-hours::before{
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  width: 4px;
+  height: 4px;
+  margin-right: 9px;
+  background-color: #46CB72;
+  border-radius: 50%;
+}
+.phone-number{
+  margin-left: 40px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.phone-number::before{
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  width: 33px;
+  height: 33px;
+  margin-right: 16px;
+  border-radius: 50%;
+  background: url("../img/tel.png"),
+  linear-gradient(287.74deg, #F58656 8.52%, #c0c0c0 92.72%);
+  background-position: center center;
+  background-repeat: no-repeat;
 }
