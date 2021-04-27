@@ -1,4 +1,13 @@
 /* FONTS  */
+/* montserrat-300 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+       url('../fonts/montserrat-v15-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v15-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* montserrat-regular - latin */
 @font-face {
   font-family: 'Montserrat';
@@ -52,6 +61,17 @@ body{
 img{
   max-width: 100%;
   display: block;
+}
+@keyframes rotate{
+  0%{
+    transform: rotate(0);
+  }
+  50%{
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
 }
 .container{
   max-width: 1340px;
@@ -281,6 +301,7 @@ img{
   linear-gradient(287.74deg, #F58656 8.52%, #FE5626 92.72%);
   background-repeat: no-repeat;
   background-position: center center;
+  animation-iteration-count: 0;
 }
 .Quattro::before{
   background-image: url("../img/quattro.png");
@@ -359,6 +380,7 @@ img{
   background-position: center center;
   box-shadow: 0px 4px 8px rgba(205, 71, 41, 0.26);
   transform: rotate(-45deg);
+  animation: rotate 10s linear infinite;
 }
 .update-link{
   display: block;
@@ -372,4 +394,8 @@ img{
   background-repeat: no-repeat;
   background-position: center center;
   box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26);
+  animation: rotate 20s linear infinite;
+}
+.update-link:hover{
+  animation-play-state: paused;
 }
