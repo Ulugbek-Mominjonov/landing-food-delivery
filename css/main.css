@@ -34,7 +34,7 @@ body{
   padding: 0;
   margin: 0;
   font-family: "Montserrat", "Arial", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 17px;
   color: #000000;
@@ -54,9 +54,9 @@ img{
   display: block;
 }
 .container{
-  max-width: 1300px;
-  padding-left: 70px;
-  padding-right: 70px;
+  max-width: 1340px;
+  padding-left: 90px;
+  padding-right: 90px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -181,4 +181,195 @@ img{
 }
 .pizza-cost span{
   color: #f3602b;
+}
+/* POPULAR DIESHES */
+.popular-dishes{
+  position: relative;
+  padding-bottom: 109px;
+  background-image: url("../img/bgicons.png");
+  background-repeat: no-repeat;
+  background-position: 0 161px;
+}
+.popular-dishes::before{
+  content: "";
+  position: absolute;
+  width: 308px;
+  height: 166px;
+  background-image: url("../img/counter.png");
+  background-repeat: no-repeat;
+  top: 0;
+  left: calc(50% + 366px);
+}
+.popular-container{
+  padding-top: 120px;
+  padding-left: 45px;
+  padding-right: 135px;
+}
+.popular-dishes-title{
+  margin-top: 0;
+  margin-bottom: 49px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 59px;
+  text-align: center;
+  color: #000000;
+}
+.droduct-list{
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+  list-style-type: none;
+}
+.droduct-item:not(:first-child){
+  margin-left: 31px;
+}
+.product-button{
+  padding: 16px 52px;
+  border: none;
+  border-radius: 45px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  background: linear-gradient(0deg, #ECEEF6, #ECEEF6), #59AAF1;
+  cursor: pointer;
+}
+.active{
+  background: #59AAF1;
+  color: #fff;
+}
+.pizza-list{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.pizza-item{
+  position: relative;
+  margin-bottom: 43px;
+}
+.pizza-item:not(:nth-child(5)):not(:first-child){
+  margin-left: 40px;
+}
+.pizza-link{
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  padding-left: 25px;
+  padding-right: 15px;
+  padding-top: 36px;
+  padding-bottom: 18px;
+  text-decoration: none;
+  color: #000000;
+  border: 2px solid #ECEEF7;
+  border-radius: 15px;
+  z-index: -1;
+}
+.pizza-link::before{
+  content: "";
+  width: 170px;
+  height: 173px;
+  align-self: center;
+  background-size: contain;
+  background-repeat: no-repeat;  
+  filter: drop-shadow(10px 5px 10px rgba(143, 92, 32, 0.1));
+}
+.pizza-link:hover .savat::before{
+  background: url("../img/savatoq.png"),
+  linear-gradient(287.74deg, #F58656 8.52%, #FE5626 92.72%);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.Quattro::before{
+  background-image: url("../img/quattro.png");
+}
+.Карбонара::before{
+  background-image: url("../img/kardaro.png");
+}
+.filodelfiya::before{
+  background-image: url("../img/selmon.png");
+}
+.Di::before{
+  background-image: url("../img/di.png");
+}
+.pizza-item:nth-of-type(5) .kvatro::before{
+  background-image: url("../img/kvatro.png");
+}
+.pizza-item:nth-of-type(6) .kvatro::before{
+  background-image: url("../img/kvatro2.png");
+}
+.pizza-item:nth-of-type(7) .kvatro::before{
+  background-image: url("../img/kvatro3.png");
+}
+.pizza-item:nth-of-type(8) .kvatro::before{
+  background-image: url("../img/kvatro4.png");
+}
+.pizza-name{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+}
+.pizza-name span{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+}
+.pizza-info{
+  margin: 0;
+  margin-bottom: 19px;
+}
+.pizza-link>span{
+  margin-bottom: 18px;
+  align-self: center;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 140%;
+  color: #121146;
+  z-index: 100;
+}
+.savat{
+  position: absolute;
+  width: 49px;
+  z-index: 99;
+  bottom: -25px;
+  left: calc(50% - 25px);
+  padding: 8px;
+  border-bottom: 2px solid #ECEEF7;
+  border-right: 2px solid #ECEEF7;
+  border-bottom-right-radius: 23px;
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+.savat::before{
+  display: block;
+  content: "";
+  width: 33px;
+  height: 33px;
+  padding: 8px 10px 11px 11px;
+  border-radius: 50%;
+  background-image: url("../img/savat.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: 0px 4px 8px rgba(205, 71, 41, 0.26);
+  transform: rotate(-45deg);
+}
+.update-link{
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 45px;
+  border-radius: 50%;
+  background: url("../img/updateicon.png"),
+  linear-gradient(287.74deg, #F58656 8.52%, #FE5626 92.72%);
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26);
 }
