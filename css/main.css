@@ -145,6 +145,7 @@ img{
 }
 .phone-number{
   margin-left: 40px;
+  text-decoration: none;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
