@@ -73,6 +73,17 @@ img{
     transform: rotate(0deg);
   }
 }
+@keyframes scale{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.06);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
 .container{
   max-width: 1340px;
   padding-left: 90px;
@@ -141,6 +152,7 @@ img{
   vertical-align: middle;
   white-space: nowrap;
 }
+
 .phone-number::before{
   display: inline-block;
   vertical-align: middle;
@@ -153,6 +165,7 @@ img{
   linear-gradient(287.74deg, #F58656 8.52%, #c0c0c0 92.72%);
   background-position: center center;
   background-repeat: no-repeat;
+  animation: scale 4s linear infinite;
 }
 /* intro  */
 .intro-container{
