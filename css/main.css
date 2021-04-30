@@ -85,9 +85,9 @@ img{
   }
 }
 .container{
-  max-width: 1340px;
-  padding-left: 90px;
-  padding-right: 90px;
+  max-width: 1348px;
+  padding-left: 94px;
+  padding-right: 94px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -218,14 +218,19 @@ img{
 }
 /* POPULAR DIESHES */
 .popular-dishes{
-  position: relative;
   padding-bottom: 109px;
   background-image: url("../img/bgicons.png");
   background-repeat: no-repeat;
   background-position: center 161px;
   background-size: contain;
 }
-.popular-dishes::before{
+.popular-container{
+  position: relative;
+  padding-top: 120px;
+  padding-left: 45px;
+  padding-right: 143px;
+}
+.popular-container::before{
   content: "";
   position: absolute;
   width: 308px;
@@ -233,12 +238,7 @@ img{
   background-image: url("../img/counter.png");
   background-repeat: no-repeat;
   top: 0;
-  left: calc(50% + 366px);
-}
-.popular-container{
-  padding-top: 120px;
-  padding-left: 45px;
-  padding-right: 135px;
+  right: 0;
 }
 .popular-dishes-title{
   margin-top: 0;
@@ -300,6 +300,13 @@ img{
   border-radius: 15px;
   z-index: -1;
 }
+.pizza-link:hover .savat::before{
+  background: url("../img/savatoq.png"),
+  linear-gradient(287.74deg, #F58656 8.52%, #FE5626 92.72%);
+  background-repeat: no-repeat;
+  background-position: center center;
+  animation-iteration-count: 0;
+}
 .pizza-link::before{
   content: "";
   width: 170px;
@@ -308,13 +315,6 @@ img{
   background-size: contain;
   background-repeat: no-repeat;  
   filter: drop-shadow(10px 5px 10px rgba(143, 92, 32, 0.1));
-}
-.pizza-link:hover .savat::before{
-  background: url("../img/savatoq.png"),
-  linear-gradient(287.74deg, #F58656 8.52%, #FE5626 92.72%);
-  background-repeat: no-repeat;
-  background-position: center center;
-  animation-iteration-count: 0;
 }
 .Quattro::before{
   background-image: url("../img/quattro.png");
