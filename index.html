@@ -52,33 +52,38 @@
     </div>
   </header>
   <main>
+    <!-- popular-dishes -->
     <section class="popular-dishes">
       <div class="container popular-container">
+
         <h2 class="popular-dishes-title">
           Popular dishes
         </h2>
-        <ul class="droduct-list">
-          <li class="droduct-item">
+
+        <!-- product-list -->
+        <ul class="product-list">
+          <li class="product-item">
             <button class="product-button active">Pizza</button>
           </li>
 
-          <li class="droduct-item">
+          <li class="product-item">
             <button class="product-button">Sushi</button>
           </li>
 
-          <li class="droduct-item">
+          <li class="product-item">
             <button class="product-button">Salad</button>
           </li>
 
-          <li class="droduct-item">
+          <li class="product-item">
             <button class="product-button">Dessert</button>
           </li>
 
-          <li class="droduct-item">
+          <li class="product-item">
             <button class="product-button">Drinks</button>
           </li>
         </ul>
 
+        <!-- pizza-list -->
         <ul class="pizza-list">
 
           <li class="pizza-item">
@@ -171,7 +176,30 @@
 
         </ul>
 
+        <!-- update-link -->
         <a href="#" class="update-link"></a>
+      </div>
+    </section>
+
+    <section class="our-galary">
+      <div class="fill-out-form-box">
+        <h2 class="our-galary-title">
+          Fill out the form <br>
+          and we will call you
+        </h2>
+        <form action="" class="galary-form" method="POST">
+          <div class="user-name form-group">
+            <label class="visually-hidden" for="name">Your name</label>
+            <input class="user-name-input form-input" type="text" name="user_name" id="name" placeholder="Your name">
+          </div>
+
+          <div class="phone-numbers form-group">
+            <label class="visually-hidden" for="phone">Phone number</label>
+            <input class="Phone-number-input form-input" type="tel" name="phone_number" id="phone" placeholder="Phone number">
+          </div>
+          
+          <button class="call-button form-input" type="button">Сall back</button>
+        </form>
       </div>
     </section>
   </main>
