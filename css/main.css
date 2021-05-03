@@ -65,6 +65,14 @@ img{
 .logo{
   cursor: pointer;
 }
+.container{
+  max-width: 1348px;
+  padding-left: 94px;
+  padding-right: 94px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* animation */
 @keyframes rotate{
   0%{
     transform: rotate(0);
@@ -87,15 +95,10 @@ img{
     transform: scale(1);
   }
 }
-.container{
-  max-width: 1348px;
-  padding-left: 94px;
-  padding-right: 94px;
-  margin-left: auto;
-  margin-right: auto;
-}
 /* HEADER  */
+
 /* site-nav */
+
 .site-header{
   background-color: #F0F5FB;
   background-image: url("../img/bannerimg.png");
@@ -171,7 +174,9 @@ img{
   background-repeat: no-repeat;
   animation: scale 4s linear infinite;
 }
-/* intro  */
+
+/* intro or hero */
+
 .intro-container{
   position: relative;
   top:  105px;
@@ -219,7 +224,9 @@ img{
 .pizza-cost span{
   color: #f3602b;
 }
+
 /* POPULAR DIESHES */
+
 .popular-dishes{
   padding-bottom: 109px;
   background-image: url("../img/bgicons.png");
@@ -398,6 +405,9 @@ img{
   transform: rotate(-45deg);
   animation: rotate 10s linear infinite;
 }
+
+/* update  */
+
 .update-link{
   display: block;
   width: 60px;
@@ -415,6 +425,42 @@ img{
 .update-link:hover{
   animation-play-state: paused;
 }
+
+/* our-galary */
+.our-galary{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url("../img/instagrambgimg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.instagram-box{
+  max-width: 480px;
+  padding: 20px;
+  margin: 0 auto;
+  background: linear-gradient(45.04deg, #FD9924 -51.05%, #F65B16 134.89%);
+  box-shadow: 0px 70px 90px rgba(253, 55, 36, 0.2), 0px 35px 50px rgba(253, 55, 36, 0.2), 0px 20px 25px rgba(253, 55, 36, 0.2);
+  border-radius: 15px;
+}
+.instagram{
+  margin: 0;
+  padding: 55px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+.instagram-link{
+  text-decoration: none;
+  color: #fff;
+}
+
+/* .fill-out-section  */
+
 .fill-out-section{
   padding-top: 10px;
   background-color: #F0F5FB;
@@ -490,39 +536,8 @@ img{
   background-image: url("../img/car.png");
 }
 
-/* our-galary */
-.our-galary{
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-image: url("../img/instagrambgimg.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-.instagram-box{
-  max-width: 480px;
-  padding: 20px;
-  margin: 0 auto;
-  background: linear-gradient(45.04deg, #FD9924 -51.05%, #F65B16 134.89%);
-  box-shadow: 0px 70px 90px rgba(253, 55, 36, 0.2), 0px 35px 50px rgba(253, 55, 36, 0.2), 0px 20px 25px rgba(253, 55, 36, 0.2);
-  border-radius: 15px;
-}
-.instagram{
-  margin: 0;
-  padding: 55px;
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 29px;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.7);
-}
-.instagram-link{
-  text-decoration: none;
-  color: #fff;
-}
-/* .footer */
+/* site-footer */
+
 .footer-container{
   padding-bottom: 51px;
   display: flex;
